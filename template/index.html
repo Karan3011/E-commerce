@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <title>Shopping Mart</title>
+    </head>
+
+    <body>
+        <div class="grid-container">
+            <header class="header">
+                <div class="brand">
+                    <button onclick="openMenu()">
+                        &#9776;
+                    </button>
+                    <a href="index.html">Shopping Mart</a>
+                </div>
+                <div class="header-links">
+                    <a href="cart.html">Cart</a>
+                    <a href="signin.html
+                    ">Sign In</a>
+                </div>
+                
+            </header>
+            <aside class="sidebar">
+                <h3>Shopping Categories</h3>
+                <button class="sidebar-close-button"onclick="closeMenu()">x</button>
+                <ul>
+                    <li>
+                        <a href="index.html">Lentils</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Dairy Product</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Others</a>
+                    </li>
+                </ul>
+            </aside>
+            
+            <main class="main">
+                <div class="content">
+                    <ul class="products">
+                    <li>
+                        <div class="product">
+                            <img class="product-image"src="/images/d1.jpg" alt="product">
+                            <div class="product-name"><a href="product.html">Rajma</a></div>
+                            <div class="product-brand">Lentil</div>
+                            <div class="product-price">₹200/kg</div>
+                            <div class="product-rating">4.5 Stars (35 reviews)</div>
+                        </div>
+
+                    </li>
+
+                    <li>
+                        <div class="product">
+                            <img class="product-image"src="/images/d2.jpg" alt="product">
+                            <div class="product-name"><a href="product.html">Masoor</a></div>
+                            <div class="product-brand">Lentil</div>
+                            <div class="product-price">₹80/kg</div>
+                            <div class="product-rating">4.8 Stars (75 reviews)</div>
+                        </div>
+
+                    </li>
+
+                    <li>
+                        <div class="product">
+                            <img class="product-image"src="/images/d3.jpg" alt="product">
+                            <div class="product-name"><a href="product.html">Channa Dal</a></div>
+                            <div class="product-brand">Lentil</div>
+                            <div class="product-price">₹95/kg</div>
+                            <div class="product-rating">4.1 Stars (66 reviews)</div>
+                        </div>
+
+                    </li>
+
+                    <li>
+                        <div class="product">
+                            <img class="product-image"src="/images/d4.jpg" alt="product">
+                            <div class="product-name"><a href="product.html">Urad Dal</a></div>
+                            <div class="product-brand">Lentil</div>
+                            <div class="product-price">₹120/kg</div>
+                            <div class="product-rating">3.8 Stars (20 reviews)</div>
+                        </div>
+
+                    </li>
+
+                    <li>
+                        <div class="product">
+                            <img class="product-image"src="/images/d5.jpg" alt="product">
+                            <div class="product-name"><a href="product.html">Kala Channa</a></div>
+                            <div class="product-brand">Lentil</div>
+                            <div class="product-price">₹250/kg</div>
+                            <div class="product-rating">3.0 Stars (56 reviews)</div>
+                        </div>
+
+                    </li>
+
+                    <li>
+                        <div class="product">
+                            <img class="product-image"src="/images/d6.jpg" alt="product">
+                            <div class="product-name"><a href="product.html">Soyabean</a></div>
+                            <div class="product-brand">Lentil</div>
+                            <div class="product-price">₹160/kg</div>
+                            <div class="product-rating">3.6 Stars (55 reviews)</div>
+                        </div>
+
+                    </li>
+                    
+                </ul> 
+                </div>
+               
+            </main>
+            <footer class="footer">
+                All rights reserved.
+            </footer>
+        </div>
+        <script>
+            function openMenu(){
+                document.querySelector(".sidebar").classList.add("open");
+            }
+            function closeMenu()
+            {
+                document.querySelector(".sidebar").classList.remove("open");
+            }
+        </script>
+    </body>
+</html>
